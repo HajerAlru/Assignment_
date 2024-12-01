@@ -56,11 +56,17 @@ Enter your name: Alex
 How many questions would you like to answer (1-15)? 1
 
 Question 1: What is the largest desert in the world?
+
 A) Sahara
+
 B) Arabian
+
 C) Gobi
+
 D) Kalahari
+
 Your answer: A
+
 Correct!
 
 Alex's Results:
