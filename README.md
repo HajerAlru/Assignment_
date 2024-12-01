@@ -47,9 +47,11 @@ Usage:
 ----------------
 Example Session:
 ----------------
-Here is an example output from a session with one participant:
+
+Here is an example output from a session with two participants:
 
 Welcome to the Quiz! Let's get started!
+
 Enter your name: Alex
 How many questions would you like to answer (1-15)? 1
 
@@ -62,16 +64,33 @@ Your answer: A
 Correct!
 
 Alex's Results:
-Score: 1/1
-Percentage: 100%
-Correct Answers: 1
-Incorrect Answers: 0
+Score: 1/1 (100%)
+
+Would anyone else like to take the quiz? (yes/no): yes
+
+Welcome to the Quiz! Let's get started!
+
+Enter your name: Sam
+How many questions would you like to answer (1-15)? 1
+
+Question 1: What is the capital of Brazil?
+A) São Paulo
+B) Rio de Janeiro
+C) Brasilia
+D) Salvador
+Your answer: A
+Incorrect. The correct answer was: C) Brasilia
+
+Sam's Results:
+Score: 0/1 (0%)
+
 Would anyone else like to take the quiz? (yes/no): no
 
 Final Results:
 Highest Score: Alex - 1/1
 Alex: 1/1
-Average Score: 1.00
+Sam: 0/1
+Average Score: 0.50
 
 ----------------
 Requirements:
