@@ -1,8 +1,8 @@
 # Geography Quiz Application
 
 # Imports
-import random # Import the random module for shuffling questions
-import re # Import the re module for regular expression operations
+import random  # Import the random module for shuffling questions
+import re  # Import the re module for regular expression operations
 
 # User Class
 class User:
@@ -16,15 +16,15 @@ class User:
 # Question Class
 class Question:
     # Stores and manages individual quiz questions.
-    def __init__(self, question_text, choices, answer): # Creates a new Question object.
-        self.question_text = question_text  # Stores the text of the question.
-        self.choices = choices  # Holds all answer choices for the question.
-        self.answer = answer # Stores the correct answer key that matches one of the choices
+    def __init__(self, question_text, choices, answer):  # Creates a new Question object
+        self.question_text = question_text  # Stores the text of the question
+        self.choices = choices  # Holds all answer choices for the question
+        self.answer = answer  # Stores the correct answer key that matches one of the choices
 
 # Quiz Class
 class Quiz:
-    # Manages the quiz questions including loading questions, tracking the current user, and managing the user's progress through the quiz.
-    def __init__(self): # Creates a new Quiz object
+    # Manages the quiz questions including loading questions, tracking the current user, and managing the user's progress through the quiz
+    def __init__(self):  # Creates a new Quiz object
         self.questions = self.load_questions()  # Load all available questions into the quiz
         self.current_user = None  # No user assigned yet; this will be set when the quiz starts
 
@@ -114,12 +114,12 @@ class Quiz:
 
     def start_quiz(self, num_questions):
         # Prepare a set of random questions for the quiz
-        random.shuffle(self.questions)  # Shuffle all questions so they appear in random order each time the quiz is started
+        random.shuffle(self.questions)  # Shuffle all questions, so they appear in random order each time the quiz is started
         return self.questions[:num_questions]  # Return the requested number of questions
 
     def check_answer(self, question, user_answer):
         # Check if the user's answer is correct and update their score.
-        if user_answer.upper() == question.answer: # Convert the user's answer to uppercase for case-insensitive comparison
+        if user_answer.upper() == question.answer:  # Convert the user's answer to uppercase for case-insensitive comparison
             # If the answer is correct:
             # Increment the user's score by 1
             self.current_user.score += 1
@@ -138,14 +138,14 @@ class Quiz:
 # QuizManager Class
 class QuizManager:
     # Manages the overall quiz process, including user interactions and quiz flow
-    def __init__(self)# Set up the QuizManager
+    def __init__(self):  # Set up the QuizManager
         self.quiz = Quiz()  # Create a new Quiz instance to manage all quiz-related logic
         self.users = []   # Create an empty list to store all users who participate in the quiz
 
     @staticmethod
     def get_valid_name():
         # Prompt for and validate the user's name
-        while True: # Begins an infinite loop that will continuously prompt the user for a name until a valid one is entered.
+        while True:  # Begins an infinite loop that will continuously prompt the user for a name until a valid one is entered
             # Prompt the user to enter their name and strip any surrounding whitespace
             name = input("Enter your name: ").strip()
             # Check if the name is empty
@@ -164,7 +164,7 @@ class QuizManager:
     @staticmethod
     def get_valid_input(prompt, valid_options):
         # Prompt for and validate user input against a set of valid options
-        while True:  # Begins an infinite loop that will continue until the user provides valid input.
+        while True:  # Begins an infinite loop that will continue until the user provides valid input
             # Prompt the user for input, strip any surrounding whitespace, and convert to uppercase
             user_input = input(prompt).strip().upper()
             # Check if the input is one of the valid options
@@ -208,7 +208,7 @@ class QuizManager:
                 else:
                     # If the answer is incorrect, find the correct answer from the choices
                     correct_answer = next(choice for choice in question.choices if choice.startswith(question.answer))
-                    print(f"Incorrect. The correct answer was: {correct_answer}") # Provide feedback with the correct answer
+                    print(f"Incorrect. The correct answer was: {correct_answer}")  # Provide feedback with the correct answer
 
             # After all questions have been answered, show the results for this user
             self.display_results()
@@ -238,12 +238,12 @@ class QuizManager:
         if self.users:  # Check if there are any users who have taken the quiz
             print("\nFinal Results:")
             highest_score = max(self.users, key=lambda x: x.score) # Find the user with the highest score
-            # Print the highest score, showing the user's name, their score (correct answers), and total questions answered (correct + incorrect)
+            # Print the highest score, showing the user's name, their score, and total questions answered
             print(f"Highest score: {highest_score.name} - {highest_score.score}/{highest_score.correct_total + highest_score.incorrect_total}")
 
             # Iterate through each user who took the quiz
             for user in self.users:
-                total_questions = user.correct_total + user.incorrect_total # Calculate total questions answered by each user
+                total_questions = user.correct_total + user.incorrect_total  # Calculate total questions answered by each user
                 # Print the user's name, their score, and the total number of questions they answered
                 print(f"{user.name}: {user.score}/{total_questions}")
 
@@ -251,6 +251,6 @@ class QuizManager:
             print(f"\nAverage score: {average_score:.2f}")  # Display the score of each user
 
 # Main Execution
-if __name__ == "__main__": # Check if this script is being run directly (not imported as a module)
+if __name__ == "__main__":  # Check if this script is being run directly
     quiz_manager = QuizManager()  # Create an instance of the QuizManager class to handle the quiz logic
-    quiz_manager.run_quiz()  # Start and mangage the quiz process
+    quiz_manager.run_quiz()  # Start and manage the quiz process
