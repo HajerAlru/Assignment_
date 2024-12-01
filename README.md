@@ -27,7 +27,7 @@ QuizManager Class: Handles user interactions and manages the overall flow of the
 ----------------
 Usage:
 ----------------
-1. Run the program using Python:
+1. Run the program using Python.
 
 2. When prompted, enter your name to personalize the quiz experience. Names must be between 2 and 50 characters.
 
