@@ -50,43 +50,27 @@ Example Session:
 Here is an example output from a session with one participant:
 
 Welcome to the Quiz! Let's get started!
-
 Enter your name: Alex
-
 How many questions would you like to answer (1-15)? 1
 
 Question 1: What is the largest desert in the world?
-
 A) Sahara
-
 B) Arabian
-
 C) Gobi
-
 D) Kalahari
-
 Your answer: A
-
 Correct!
 
 Alex's Results:
-
 Score: 1/1
-
 Percentage: 100%
-
 Correct Answers: 1
-
 Incorrect Answers: 0
-
 Would anyone else like to take the quiz? (yes/no): no
 
 Final Results:
-
 Highest Score: Alex - 1/1
-
 Alex: 1/1
-
 Average Score: 1.00
 
 ----------------
