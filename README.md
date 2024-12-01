@@ -52,6 +52,7 @@ Here is an example output from a session with two participants:
 Welcome to the Quiz! Let's get started!
 
 Enter your name: Alex
+
 How many questions would you like to answer (1-15)? 1
 
 Question 1: What is the largest desert in the world?
@@ -70,6 +71,7 @@ Would anyone else like to take the quiz? (yes/no): yes
 Welcome to the Quiz! Let's get started!
 
 Enter your name: Sam
+
 How many questions would you like to answer (1-15)? 1
 
 Question 1: What is the capital of Brazil?
