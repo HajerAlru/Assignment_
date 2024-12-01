@@ -70,7 +70,14 @@ Your answer: A
 Correct!
 
 Alex's Results:
-Score: 1/1 (100%)
+
+Score: 1/1
+
+Percentage: 100%
+
+Correct Answers: 1
+
+Incorrect Answers: 0
 
 Would anyone else like to take the quiz? (yes/no): yes
 
@@ -81,22 +88,39 @@ Enter your name: Sam
 How many questions would you like to answer (1-15)? 1
 
 Question 1: What is the capital of Brazil?
+
 A) São Paulo
+
 B) Rio de Janeiro
+
 C) Brasilia
+
 D) Salvador
+
 Your answer: A
+
 Incorrect. The correct answer was: C) Brasilia
 
 Sam's Results:
-Score: 0/1 (0%)
+
+Score: 0/1
+
+Percentage: 0%
+
+Correct Answers: 0
+
+Incorrect Answers: 1
 
 Would anyone else like to take the quiz? (yes/no): no
 
 Final Results:
+
 Highest Score: Alex - 1/1
+
 Alex: 1/1
+
 Sam: 0/1
+
 Average Score: 0.50
 
 ----------------
