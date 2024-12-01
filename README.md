@@ -47,7 +47,7 @@ Usage:
 ----------------
 Example Session:
 ----------------
-Here is an example output from a session with two participants:
+Here is an example output from a session with one participant:
 
 Welcome to the Quiz! Let's get started!
 
